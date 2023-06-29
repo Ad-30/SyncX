@@ -62,7 +62,7 @@ function Send(){
 
   return (
     <div>
-    
+    <h1>HELLLLLLLLLLLO</h1>
     {isUploaded ? <DragAndDropInput onUpload={handleFileUpload} />: <Response uploadedFiles={uploadedFiles} code={code} /> }
     {isLoading&&<Loader />}
     {fileSizeError && <div className="d-flex justify-content-center"><div className="alert alert-danger text-center mt-2 w-50" role="alert">
