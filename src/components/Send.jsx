@@ -67,7 +67,8 @@ function Send(){
     {isLoading&&<Loader />}
     {fileSizeError && <div className="d-flex justify-content-center"><div className="alert alert-danger text-center mt-2 w-50" role="alert">
   Total data size should be less than 100 mb
-</div></div>}
+</div>
+ <h1>HELLLLLLLLLLLO</h1></div>}
 
 
     
