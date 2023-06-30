@@ -11,7 +11,7 @@ const Receive = () => {
   const [isNoFile, setIsNoFile] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const [isReceivedFiles,setIsReceivedFiles] = useState(false);
-
+  const [isDownloading,setIsDownloading] = useState(false);
   const handleCodeChange = (event) => {
     setCode(event.target.value);
   };
@@ -47,6 +47,7 @@ const Receive = () => {
 
   const handleDownload = (file) => {
     setIsLoading(true);
+    setIsDownloading(true);
    // const file_path = file.path;
     const file_name = file.name;
     axios({
@@ -69,11 +70,13 @@ const Receive = () => {
       })
       .finally(() => {
         setIsLoading(false);
+        setIsDownloading(false);
       });
       setIsLoading(false);
   };
   const handleDownloadAll = (files) => {
     setIsLoading(true);
+    setIsDownloading(true);
     files.forEach(file => {
       //const file_path = file.path;
     const file_name = file.name;
@@ -94,6 +97,10 @@ const Receive = () => {
         setIsNoFile(true);
         setIsReceivedFiles(false);
         setErrorMessage('Error Downloading File, Resend again');
+      })
+      .finally(() => {
+        setIsLoading(false);
+        setIsDownloading(false);
       });
     });
     setIsLoading(false);
@@ -111,6 +118,7 @@ return (
     )}
     {isLoading && <Loader />}
     {isReceivedFiles && <ReceiveFileList receivedFiles={receivedFiles} handleDownload={handleDownload} handleDownloadAll={handleDownloadAll} />}
+    {isDownloading&&<Loader />}
   </div>
 );
 };
