@@ -20,7 +20,7 @@ const Receive = () => {
     setIsLoading(true);
     setIsNoFile(false);
     axios
-      .get(`/download/${code}/`)
+      .get(`http://ad30.pythonanywhere.com/download/${code}/`)
       .then((response) => {
         const files = response.data;
         if (Array.isArray(files)) {
@@ -50,7 +50,7 @@ const Receive = () => {
    // const file_path = file.path;
     const file_name = file.name;
     axios({
-      url: `/download/${code}/${file_name}/`,
+      url: `http://ad30.pythonanywhere.com/download/${code}/${file_name}/`,
       method: 'GET',
       responseType: 'blob',
     })
@@ -78,7 +78,7 @@ const Receive = () => {
       //const file_path = file.path;
     const file_name = file.name;
     axios({
-      url: `/download/${code}/${file_name}/`,
+      url: `http://ad30.pythonanywhere.com/download/${code}/${file_name}/`,
       method: 'GET',
       responseType: 'blob',
     })

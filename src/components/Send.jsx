@@ -34,7 +34,7 @@ function Send(){
     try {
       
       setFileSizeError(false)
-      const response = await fetch('/upload/', {
+      const response = await fetch('http://ad30.pythonanywhere.com/upload/', {
         method: 'POST',
         body: formData,
       });
