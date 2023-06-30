@@ -14,7 +14,7 @@ function Send(){
   const handleFileUpload = async (files) => {
     
     const formData = new FormData();
-    const maxSize = 500 * 1024 * 1024;
+    const maxSize = 100 * 1024 * 1024;
     let totalSize = 0;
     Array.from(files).forEach((file) => {
       totalSize += file.size;
