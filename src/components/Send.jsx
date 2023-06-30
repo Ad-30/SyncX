@@ -14,7 +14,7 @@ function Send(){
   const handleFileUpload = async (files) => {
     
     const formData = new FormData();
-    const maxSize = 100 * 1024 * 1024;
+    const maxSize = 500 * 1024 * 1024;
     let totalSize = 0;
     Array.from(files).forEach((file) => {
       totalSize += file.size;
@@ -62,13 +62,13 @@ function Send(){
 
   return (
     <div>
-    <h1>HELLLLLLLLLLLO</h1>
+   
     {isUploaded ? <DragAndDropInput onUpload={handleFileUpload} />: <Response uploadedFiles={uploadedFiles} code={code} /> }
     {isLoading&&<Loader />}
     {fileSizeError && <div className="d-flex justify-content-center"><div className="alert alert-danger text-center mt-2 w-50" role="alert">
   Total data size should be less than 100 mb
 </div>
- <h1>HELLLLLLLLLLLO</h1></div>}
+ </div>}
 
 
     

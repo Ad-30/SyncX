@@ -1,9 +1,9 @@
 {
-  "homepage": "https://Ad-30.github.io/ShareFront",
+  "homepage": "http://Ad-30.github.io/ShareFront",
   "name": "share",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://d48c-2401-4900-1c7b-6f05-1cd6-ee8b-9d0-a423.ngrok-free.app",
+  "proxy": "http://ad30.pythonanywhere.com/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",

@@ -97,55 +97,7 @@ const Receive = () => {
       });
     });
     setIsLoading(false);
-  };
-
-//   return (
-//     <div className="container">
-//       <h2 className="mt-4 mb-3">Receive Files</h2>
-//       <div className="mb-3">
-//         <input
-//           type="text"
-//           value={code}
-//           onChange={handleCodeChange}
-//           className="form-control"
-//           placeholder="Enter code"
-//         />
-//         <button onClick={handleReceive} className="btn btn-primary mt-2">
-//           Receive
-//         </button>
-//       {isNoFile&&<div className="d-flex justify-content-center"><div className="alert alert-danger text-center mt-2 w-50" role="alert">
-//   {errorMessage}
-// </div></div>}
-//         {isLoading&&<Loader />}
-        
-//       </div>
-    
-//       {receivedFiles.length > 0 && (
-//         <div>
-//           <h3 className="mb-3">Received Files:</h3>
-//           <ul className="list-group">
-          
-//             {receivedFiles.map((file, index) => (
-//               <li key={index} className="list-group-item d-flex align-items-center">
-//                 <span className="mr-auto">{file.name}</span>
-//                 <button onClick={() => handleDownload(file)} className="btn btn-success btn-sm ml-2">
-//                   <FontAwesomeIcon icon={faDownload} className="mr-1"/>
-//                 </button>
-//               </li>
-//             ))}
-//             <button onClick={() => handleDownloadAll(receivedFiles)} className="btn btn-success btn-sm ml-2">
-//                   {/* <FontAwesomeIcon icon={faDownload} className="mr-1"/> */}
-//                   Download All
-//                 </button>
-//           </ul>
-          
-//         </div>
-        
-//       )}
-      
-//     </div>
-//   );
-// };
+  }
 return (
   <div className="container">
     <h2 className="mt-4 mb-3">Receive Files</h2>
