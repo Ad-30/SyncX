@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Header from "./Header";
-
+import Navbar from "./Navbar";
 import Send from "./Send";
 import Receive from "./Receive"; 
 function App(){
@@ -16,7 +15,7 @@ function App(){
 
   return (
     <div>
-    <Header handleIsSend={handleSend}/>
+    <Navbar handleIsSend={handleSend}/>
     
     {isSend?<Send />:<Receive />}
     
