@@ -22,7 +22,7 @@ const Navbar = (props) => {
         <label htmlFor="check" className="checkbtn">
           <i className="fas fa-bars"></i>
         </label>
-        <label className="logo">Share</label>
+        <label className="logo">SyncX</label>
         <ul className="navul">
           <li>
             <a className="active" href="#" onClick={isSendFun}>
