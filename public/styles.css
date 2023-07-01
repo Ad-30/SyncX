@@ -141,7 +141,7 @@ a.active,a:hover{
   .checkbtn{
     display: block;
   }
-  ul{
+  .navul{
     position: fixed;
     width: 20%;
     height: 0vh;

@@ -1,39 +1,42 @@
-import React,{useState} from 'react';
-// Assuming you save the CSS file as "Navbar.css" in the same directory
+import React, { useState } from 'react';
 
 const Navbar = (props) => {
-  const [isSend,setIsSend] = useState(true);
-  function isSendFun(){
+  const [isSend, setIsSend] = useState(true);
+
+  function isSendFun() {
     var res;
-    if (isSend === true){
+    if (isSend === true) {
       setIsSend(false);
-       res = false
-    }else{
+      res = false;
+    } else {
       setIsSend(true);
-       res = true
+      res = true;
     }
-    
     props.handleIsSend(res);
   }
+
   return (
     <>
-    <nav>
-      <input type="checkbox" id="check" />
-      <label htmlFor="check" className="checkbtn">
-        <i className="fas fa-bars"></i>
-      </label>
-      <label className="logo">Share</label>
-      <ul>
-        <li>
-          <a className="active" href="#" onClick={isSendFun}>
-      {isSend ? 'Receive' : 'Send'}
-    </a>
-        </li>
-      </ul>
-    </nav>
-<div className="mt-2 d-flex justify-content-center"><button className="btn btn-primary d-sm-none" onClick={isSendFun}>{isSend?"Receive":"Send"}</button></div>
-
-   </>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label htmlFor="check" className="checkbtn">
+          <i className="fas fa-bars"></i>
+        </label>
+        <label className="logo">Share</label>
+        <ul className="navul">
+          <li>
+            <a className="active" href="#" onClick={isSendFun}>
+              {isSend ? 'Receive' : 'Send'}
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div className="mt-2 d-flex justify-content-center">
+        <button className="btn btn-primary d-sm-none" onClick={isSendFun}>
+          {isSend ? 'Receive' : 'Send'}
+        </button>
+      </div>
+    </>
   );
 };
 

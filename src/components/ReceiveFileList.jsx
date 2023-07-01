@@ -3,12 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const ReceiveFileList = ({ receivedFiles, handleDownload, handleDownloadAll }) => {
+  
   return (
     <div>
       <h3 className="mb-3">Received Files:</h3>
-      <ul className="list-group">
+      <ul  className="list-group" id='received' >
         {receivedFiles.map((file, index) => (
-          <li key={index} className="list-group-item d-flex align-items-center">
+          <li  key={index} className="list-group-item d-flex align-items-center">
             <span className="mr-auto">{file.name}</span>
             <button onClick={() => handleDownload(file)} className="btn btn-success btn-sm ml-2">
               <FontAwesomeIcon icon={faDownload} className="mr-1" />
