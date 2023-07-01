@@ -13,7 +13,8 @@ const Receive = () => {
   const [isReceivedFiles,setIsReceivedFiles] = useState(false);
   const [isDownloading,setIsDownloading] = useState(false);
   const handleCodeChange = (event) => {
-    setCode(event.target.value);
+    const uppercaseValue = event.target.value.toUpperCase();
+    setCode(uppercaseValue);
   };
 
   const handleReceive = () => {
