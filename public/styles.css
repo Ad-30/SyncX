@@ -1,3 +1,6 @@
+body{
+  font-family: Helvetica Neue;
+}
 .drag-and-drop-container:hover{
   color:#0d6efd;
   border-color: #0d6efd;
@@ -73,9 +76,7 @@
   list-style: none;
   box-sizing: border-box;
 }
-body{
-  font-family: Helvetica Neue;
-}
+
 nav{
   background: #0d6efd;
   height: 80px;
@@ -109,6 +110,7 @@ a.active,a:hover{
   transition: .5s;
   cursor:pointer;
   text-decoration: none;
+  text-transform:none;
 }
 .buttontoa{
   background-color: #007bff;
@@ -142,7 +144,7 @@ a.active,a:hover{
   ul{
     position: fixed;
     width: 20%;
-    height: 100vh;
+    height: 0vh;
     background: transparent;
     top: 50px;
     left: -100%;
@@ -160,6 +162,9 @@ a.active,a:hover{
   a:hover,a.active{
     background: none;
     color: #0d6efd;
+    cursor:pointer;
+  text-decoration: none;
+    text-transform: none;
   }
   #check:checked ~ ul{
     left: 0;

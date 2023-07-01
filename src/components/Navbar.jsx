@@ -25,17 +25,12 @@ const Navbar = (props) => {
       <label className="logo">Share</label>
       <ul>
         <li>
-          {/* <a className="active" href="#">
-            Receive
-          </a> */}
-          {/* <button className="active buttontoa" onClick={isSendFun} href="">{isSend?"Receive":"Send"}</button> */}
           <a className="active" href="#" onClick={isSendFun}>
       {isSend ? 'Receive' : 'Send'}
     </a>
         </li>
       </ul>
     </nav>
-    {/* <section></section> */}
 <div className="mt-2 d-flex justify-content-center"><button className="btn btn-primary d-sm-none" onClick={isSendFun}>{isSend?"Receive":"Send"}</button></div>
 
    </>
