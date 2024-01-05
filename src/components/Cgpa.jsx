@@ -7,6 +7,7 @@ const CGPA = () => {
   const [cgpa, setCGPA] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  document.title = 'CGPA Calculator';
 
   const handleFileChange = (e) => {
     setFile(e.target.files[0]);
