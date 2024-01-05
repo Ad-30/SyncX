@@ -14,9 +14,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Send />} />
           <Route path="/SyncX" element={<Send />} />
-          <Route path="/send" element={<Send />} />
-          <Route path="/receive" element={<Receive />} />
-          <Route path="/cgpa" element={<CGPA />} />
+          <Route path="/SyncX/send" element={<Send />} />
+          <Route path="/SyncX/receive" element={<Receive />} />
+          <Route path="/SyncX/cgpa" element={<CGPA />} />
         </Routes>
         </div>
       </div>
