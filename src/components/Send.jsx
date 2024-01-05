@@ -10,6 +10,7 @@ function Send(){
   const [isUploaded,setIsUploaded] = useState(true);
   const [fileSizeError, setFileSizeError] = useState(false);
   const [isLoading,setIsLoading] = useState(false);
+  document.title = 'Send File';
   
   const handleFileUpload = async (files) => {
     

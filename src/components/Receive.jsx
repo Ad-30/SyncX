@@ -5,6 +5,8 @@ import ReceiveFileList from './ReceiveFileList';
 import Loader from './Loader';
 
 const Receive = () => {
+  document.title = 'Receive File';
+
   const [code, setCode] = useState('');
   const [receivedFiles, setReceivedFiles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
