@@ -92,7 +92,7 @@ const CGPA = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="decaInput" className="form-label">
-            Deca Grade
+            DECA Grade
           </label>
           <input
             type="text"
