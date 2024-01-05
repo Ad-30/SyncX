@@ -77,42 +77,42 @@ body{
   box-sizing: border-box;
 }
 
-nav{
+/* nav{
   background: #0d6efd;
   height: 80px;
   width: 100%;
-}
-label.logo{
+} */
+/* label.logo{
   color: white;
   font-size: 35px;
   line-height: 80px;
   padding: 0 100px;
   font-weight: bold;
-}
-nav ul{
+} */
+/* nav ul{
   float: right;
   margin-right: 20px;
-}
-nav ul li{
+} */
+/* nav ul li{
   display: inline-block;
   line-height: 80px;
   margin: 0 5px;
-}
-nav ul li a{
+} */
+/* nav ul li a{
   color: white;
   font-size: 17px;
   padding: 7px 13px;
   border-radius: 3px;
   text-transform: uppercase;
-}
-a.active,a:hover{
+} */
+/* a.active,a:hover{
   background: #0d6efd;
   transition: .5s;
   cursor:pointer;
   text-decoration: none;
   text-transform:none;
-}
-.buttontoa{
+} */
+/* .buttontoa{
   background-color: #007bff;
   box-shadow: none;
 }
@@ -124,11 +124,11 @@ a.active,a:hover{
   margin-right: 40px;
   cursor: pointer;
   display: none;
-}
-#check{
+} */
+/* #check{
   display: none;
-}
-@media (max-width: 952px){
+} */
+/* @media (max-width: 952px){
   label.logo{
     font-size: 30px;
     padding-left: 50px;
@@ -136,8 +136,8 @@ a.active,a:hover{
   nav ul li a{
     font-size: 16px;
   }
-}
-@media (max-width: 858px){
+} */
+/* @media (max-width: 858px){
   .checkbtn{
     display: block;
   }
@@ -169,9 +169,21 @@ a.active,a:hover{
   #check:checked ~ ul{
     left: 0;
   }
-}
-section{
+} */
+/* section{
   background: url(bg1.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
+} */
+
+/* In your CSS file */
+.bg-custom-blue {
+  background-color: #007bff; /* You can change the hex code to your desired shade of blue */
 }
+
+.custom-blue{
+  color: #007bff;
+}
+
+
+

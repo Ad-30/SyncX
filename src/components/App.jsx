@@ -1,27 +1,27 @@
-import React, { useState } from "react";
-import Navbar from "./Navbar";
-import Send from "./Send";
-import Receive from "./Receive"; 
-function App(){
-  const [isSend,setIsSend] = useState(true);
-  function handleSend(res){
-    if(res === false){
-      setIsSend(false);
-    }else{
-      setIsSend(true);
-    }
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './NavbarNew';
+import Send from './Send';
+import Receive from './Receive';
+import CGPA from './Cgpa';
 
-  }
-
+function App() {
   return (
-    <div>
-    <Navbar handleIsSend={handleSend}/>
-    
-    {isSend?<Send />:<Receive />}
-    
-      
-    </div>
-
+    <Router>
+      <div>
+        <Navbar />
+        <div className="content-below-navbar">
+        <Routes>
+          <Route path="/" element={<Send />} />
+          <Route path="/SyncX" element={<Send />} />
+          <Route path="/send" element={<Send />} />
+          <Route path="/receive" element={<Receive />} />
+          <Route path="/cgpa" element={<CGPA />} />
+        </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
+
 export default App;

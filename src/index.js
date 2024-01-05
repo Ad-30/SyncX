@@ -6,4 +6,4 @@ const rootElement = document.getElementById('root');
 createRoot(rootElement).render(<App />);
 
 
-// ReactDOM.render(<App />, document.getElementById("root"));
+

@@ -49,9 +49,9 @@ const DragAndDropInput = ( props ) => {
         onClick={() => fileInputRef.current.click()}
       >
         <div className="text-center">
-          <FontAwesomeIcon icon={faPlus} size="3x" />
+          <FontAwesomeIcon icon={faPlus} size="2x" />
           <br />
-          <p className="drag-and-drop-text my-auto"><b>Drag and drop files here</b></p>
+          <p className=""><b>Drag and drop files here</b></p>
           <button type="button" className="btn btn-primary">Choose a file</button>
         </div>
         <input

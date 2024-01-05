@@ -107,7 +107,7 @@ const Receive = () => {
     setIsLoading(false);
   }
 return (
-  <div className="container">
+  <div className="container mt-1">
     <h2 className="mt-4 mb-3">Receive Files</h2>
     <ReceiveForm code={code} handleCodeChange={handleCodeChange} handleReceive={handleReceive} />
     {isNoFile && (
