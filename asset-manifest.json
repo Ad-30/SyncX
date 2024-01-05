@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/SyncX/static/js/main.453f2e2d.js",
+    "main.js": "/SyncX/static/js/main.d5565775.js",
     "index.html": "/SyncX/index.html",
-    "main.453f2e2d.js.map": "/SyncX/static/js/main.453f2e2d.js.map"
+    "main.d5565775.js.map": "/SyncX/static/js/main.d5565775.js.map"
   },
   "entrypoints": [
-    "static/js/main.453f2e2d.js"
+    "static/js/main.d5565775.js"
   ]
 }
